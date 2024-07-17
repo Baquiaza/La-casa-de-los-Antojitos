@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>La Casa De Los Antojitos</title>
+<link rel="stylesheet" type="text/css" href="css/stili.css">
+</head>
+<body1>
+
+<div class="container">
+  <div class="header">
+    <h1><img src="Logo2.png" width="10%" height="20%" alt="Cup"> LA CASA DE LOS ANTOJITOS</h1>
+    <h2>LA CASA TE COMPLACE</h2>
+    <form>
+      <input type="text" placeholder="Searching">
+      <button type="submit"><img src=" " alt="Search"></button>
+    </form>
+  </div>
+  <div class="menu">
+    <nav class="bg-zinc-800">
+      <ul class="flex justify-center space-x-4 p-2">
+          <a href="index.html" class="px-2"> INICIO </a>
+          <a href="filosofia.html" class="px-2">FILOSOFIA</a>
+          <a href="menu.html" class="px-2">MENU</a>
+          <a href="galeria.html" class="px-2">GALERIA</a>
+          <a href="ubicaion.html" class="px-2">UBICACION</a>
+          <a href="blog.html" class="px-2">BLOG</a>
+  </div>
+
+  <body>
+      <div class="item1">
+        <div class="item-title">VIDEO</div>
+        <video width="1080" height="360" controls>
+          <source src="video del restaurante .fps.mp4" type="video/mp4">
+      </div>
+      <div class="container2">
+          <div class="item">
+            <div class="item-title">Tacos de carne asada</div>
+            <img src="oferta1.jpg" alt="Tacos de carne asada">
+            <div class="item-footer">
+                <button class="button" id="verMenuBtn1">Ver menú</button>
+                <button class="button" id="reservarMesaBtn1">Reservar mesa</button>
+                <button class="añadir-carrito" id="añadirCarritoBtn1">Añadir al Carrito</button>
+            </div>
+        </div>
+    
+        <div class="item">
+            <div class="item-title">Asado Familiar</div>
+            <img src="oferta2.jpg" alt="Ensaladas">
+            <div class="item-footer">
+                <button class="button" id="verMenuBtn2">Ver menú</button>
+                <button class="button" id="reservarMesaBtn2">Reservar mesa</button>
+                <button class="añadir-carrito" id="añadirCarritoBtn2">Añadir al Carrito</button>
+            </div>
+        </div>
+    
+        <div class="item">
+            <div class="item-title">Hamburguesas</div>
+            <img src="oferta3.jpg" alt="Hamburguesas">
+            <div class="item-footer">
+                <button class="button" id="verMenuBtn3">Ver menú</button>
+                <button class="button" id="reservarMesaBtn3">Reservar mesa</button>
+                <button class="añadir-carrito" id="añadirCarritoBtn3">Añadir al Carrito</button>
+            </div>
+        </div>
+    </div>
+    
+<!-- Modal Ver Menú -->
+<div id="verMenuModal1" class="modal">
+    <div class="modal-content">
+        <span class="close-btn" id="closeVerMenu1">&times;</span>
+        <h2>Menú - Tacos de carne asada</h2>
+        <h3>Aquí se muestra el menú de tacos de carne asada.</h3>
+        <h2>Tacos</h2>
+  <ul>
+      <li>Taco de Carne Asada Clásico: Carne asada, cebolla, cilantro, y salsa roja o verde.</li>
+      <li>Taco de Carne Asada con Queso: Carne asada, queso fundido, cebolla, cilantro, y salsa.</li>
+      <li>Taco de Carne Asada con Guacamole: Carne asada, guacamole, cebolla, cilantro, y salsa.</li>
+      <li>Taco de Carne Asada al Pastor: Carne asada, piña, cebolla, cilantro, y salsa.</li>
+      <li>Taco de Carne Asada con Frijoles: Carne asada, frijoles refritos, cebolla, cilantro, y salsa.</li>
+  </ul>
+  
+  <h2>Acompañamientos</h2>
+  <ul>
+      <li>Guacamole: Puré de aguacate con tomate, cebolla, cilantro, y limón.</li>
+      <li>Frijoles Refritos: Frijoles cocidos y aplastados con especias.</li>
+      <li>Arroz Mexicano: Arroz cocido con tomate, cebolla, y especias.</li>
+      <li>Elotes: Mazorcas de maíz asadas con mayonesa, queso, chile en polvo, y limón.</li>
+  </ul>
+  
+  <h2>Bebidas</h2>
+  <ul>
+      <li>Agua de Horchata: Bebida de arroz con canela y azúcar.</li>
+      <li>Agua de Jamaica: Bebida de flor de jamaica endulzada.</li>
+      <li>Agua de Tamarindo: Bebida de tamarindo con azúcar.</li>
+      <li>Refrescos: Coca-Cola, Sprite, Fanta, etc.</li>
+      <li>Cerveza: Corona, Modelo, Pacifico, etc.</li>
+  </ul>
+  
+  <h2>Salsas</h2>
+  <ul>
+      <li>Salsa Roja: Salsa picante a base de tomates y chiles rojos.</li>
+      <li>Salsa Verde: Salsa a base de tomatillos y chiles verdes.</li>
+      <li>Pico de Gallo: Mezcla fresca de tomate,cebolla, cilantro, y jalapeño.</li>
+      <li> Salsa de Aguacate: Salsa cremosa a base de aguacate y chile.</li>
+  </ul>
+
+  <h2>Postres</h2>
+  <ul>
+      <li>Churros: Masa frita con azúcar y canela.</li>
+      <li>Flan: Postre de caramelo y leche.</li>
+  </ul>
+    </div>
+</div>
+
+<div id="verMenuModal2" class="modal">
+    <div class="modal-content">
+        <span class="close-btn" id="closeVerMenu2">&times;</span>
+        <h2>Menú - Asado Familiar</h2>
+        <h3>Aquí se muestra el menú de Asado Familiar.</h3>
+        <h2>Carnes</h2>
+        <ul>
+            <li>Costillas de Res</li>
+            <li>Chorizo</li>
+            <li>Pollo Asado</li>
+            <li>Entraña</li>
+            <li>Costillar de Cerdo</li>
+        </ul>
+    
+        <h2>Guarniciones</h2>
+        <ul>
+            <li>Ensalada de Papas</li>
+            <li>Ensalada Mixta (Lechuga, tomate, cebolla, pepino)</li>
+            <li>Choclo Asado</li>
+            <li>Pan de Ajo</li>
+            <li>Arroz con Verduras</li>
+        </ul>
+    
+        <h2>Bebidas</h2>
+        <ul>
+            <li>Vino Tinto</li>
+            <li>Cerveza</li>
+            <li>Refrescos: Coca-Cola, Sprite, Fanta, etc.</li>
+            <li>Limonada Casera</li>
+            <li>Agua Mineral</li>
+        </ul>
+    
+        <h2>Salsas y Aderezos</h2>
+        <ul>
+            <li>Chimichurri</li>
+            <li>Salsa Criolla</li>
+            <li>Mayonesa Casera</li>
+            <li>Mostaza</li>
+            <li>Salsa BBQ</li>
+        </ul>
+
+        <h2>Postres</h2>
+        <ul>
+            <li>Helado</li>
+            <li>Ensalada de Frutas</li>
+            <li>Pastel de Chocolate</li>
+            <li>Tarta de Limón</li>
+            <li>Flan Casero</li>
+        </ul>
+    </div>
+</div>
+
+<div id="verMenuModal3" class="modal">
+    <div class="modal-content">
+        <span class="close-btn" id="closeVerMenu3">&times;</span>
+        <h2>Menú - Hamburguesas</h2>
+        <h3>Aquí se muestra el menú de hamburguesas.</h3>
+        <h2>Hamburguesas</h2>
+  <ul>
+      <li>Hamburguesa Clásica: Carne de res, lechuga, tomate, cebolla, pepinillos, queso cheddar, y salsa especial.</li>
+      <li>Hamburguesa con Queso: Carne de res, doble queso cheddar, lechuga, tomate, cebolla, y salsa especial.</li>
+      <li>Hamburguesa BBQ: Carne de res, queso cheddar, cebolla caramelizada, tocino, y salsa BBQ.</li>
+      <li>Hamburguesa de Pollo: Pechuga de pollo a la parrilla, lechuga, tomate, cebolla, y mayonesa.</li>
+      <li>Hamburguesa Vegetariana: Hamburguesa de garbanzos, lechuga, tomate, cebolla, pepinillos, y salsa especial.</li>
+  </ul>
+
+  <h2>Acompañamientos</h2>
+  <ul>
+      <li>Papas Fritas</li>
+      <li>Aros de Cebolla</li>
+      <li>Ensalada César</li>
+      <li>Nuggets de Pollo</li>
+      <li>Papas Rústicas</li>
+  </ul>
+
+  <h2>Bebidas</h2>
+  <ul>
+      <li>Refrescos: Coca-Cola, Sprite, Fanta, etc.</li>
+      <li>Limonada</li>
+      <li>Té Helado</li>
+      <li>Malteadas: Vainilla, Chocolate, Fresa</li>
+      <li>Cerveza</li>
+  </ul>
+
+  <h2>Salsas y Aderezos</h2>
+  <ul>
+      <li>Ketchup</li>
+      <li>Mostaza</li>
+      <li>Mayonesa</li>
+      <li>Salsa BBQ</li>
+      <li>Salsa Ranch</li>
+  </ul>
+
+  <h2>Postres</h2>
+  <ul>
+      <li>Helado</li>
+      <li>Brownie</li>
+      <li>Galletas con Chispas de Chocolate</li>
+      <li>Tarta de Manzana</li>
+      <li>Cheesecake</li>
+  </ul>
+    </div>
+</div>
+    <!-- Modal Reservar Mesa -->
+    <div id="reservarMesaModal1" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" id="closeReservarMesa1">&times;</span>
+            <h2>Reservar Mesa - Tacos de carne asada</h2>
+            <form id="reservaForm1">
+                <label for="nombre1">Nombre:</label>
+                <input type="text" id="nombre1" name="nombre1" required><br><br>
+                <label for="email1">Correo Electrónico:</label>
+                <input type="email" id="email1" name="email1" required><br><br>
+                <label for="telefono1">Teléfono:</label>
+                <input type="tel" id="telefono1" name="telefono1" required><br><br>
+                <label for="fecha1">Fecha:</label>
+                <input type="date" id="fecha1" name="fecha1" required><br><br>
+                <label for="hora1">Hora:</label>
+                <input type="time" id="hora1" name="hora1" required><br><br>
+                <button type="submit">Enviar Reserva</button>
+            </form>
+        </div>
+    </div>
+    
+    <div id="reservarMesaModal2" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" id="closeReservarMesa2">&times;</span>
+            <h2>Reservar Mesa - Asado Familiar</h2>
+            <form id="reservaForm2">
+                <label for="nombre2">Nombre:</label>
+                <input type="text" id="nombre2" name="nombre2" required><br><br>
+                <label for="email2">Correo Electrónico:</label>
+                <input type="email" id="email2" name="email2" required><br><br>
+                <label for="telefono2">Teléfono:</label>
+                <input type="tel" id="telefono2" name="telefono2" required><br><br>
+                <label for="fecha2">Fecha:</label>
+                <input type="date" id="fecha2" name="fecha2" required><br><br>
+                <label for="hora2">Hora:</label>
+                <input type="time" id="hora2" name="hora2" required><br><br>
+                <button type="submit">Enviar Reserva</button>
+            </form>
+        </div>
+    </div>
+    
+    <div id="reservarMesaModal3" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" id="closeReservarMesa3">&times;</span>
+            <h2>Reservar Mesa - Hamburguesas</h2>
+            <form id="reservaForm3">
+                <label for="nombre3">Nombre:</label>
+                <input type="text" id="nombre3" name="nombre3" required><br><br>
+                <label for="email3">Correo Electrónico:</label>
+                <input type="email" id="email3" name="email3" required><br><br>
+                <label for="telefono3">Teléfono:</label>
+                <input type="tel" id="telefono3" name="telefono3" required><br><br>
+                <label for="fecha3">Fecha:</label>
+                <input type="date" id="fecha3" name="fecha3" required><br><br>
+                <label for="hora3">Hora:</label>
+                <input type="time" id="hora3" name="hora3" required><br><br>
+                <button type="submit">Enviar Reserva</button>
+            </form>
+        </div>
+    </div>
+    
+    <!-- Modal Añadir al Carrito -->
+    <div id="añadirCarritoModal1" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" id="closeAñadirCarrito1">&times;</span>
+            <h2>Añadir al Carrito - Tacos de carne asada</h2>
+            <p>El producto ha sido añadido al carrito.</p>
+        </div>
+    </div>
+    
+    <div id="añadirCarritoModal2" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" id="closeAñadirCarrito2">&times;</span>
+            <h2>Añadir al Carrito - Asado Familiar</h2>
+            <p>El producto ha sido añadido al carrito.</p>
+        </div>
+    </div>
+    
+    <div id="añadirCarritoModal3" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" id="closeAñadirCarrito3">&times;</span>
+            <h2>Añadir al Carrito - Hamburguesas</h2>
+            <p>El producto ha sido añadido al carrito.</p>
+        </div>
+    </div>
+    
+<body>
+
+  <div class="container1">
+    <div class="social-media">
+      <h1>Siguenos!</h1>
+      <a href="https://www.instagram.com/richard_b_13?igsh=dW1ueWt4YW4xeXU0"><img src="facebook.png" alt="Instagram"> Instagram</a>
+      <a href="https://www.facebook.com/emanuel.grajales.98?mibextid=ZbWKwL"><img src="twitter.png" alt="Facebook"> Facebook</a>
+      <a href="https://plus.google.com/"><img src="google-plus.png" alt="Google"> Google</a>
+    </div>
+  
+    <div class="navigation">
+      <h1>nosotros</h1>
+      <ul>
+        <li><a>+507 6959-3258</a></li>
+        <li><a>richardlbaquiaza@gmail.com</a></li>
+      </ul>
+    </div>
+  </div>
+  </body>
+  </body1>
+  <script src="js/script.js"></script>
+</html>

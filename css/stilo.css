@@ -1,0 +1,17 @@
+body {
+    background-image: url("/imgagenes/fdgaleria.jpeg");
+}
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .image {
+    margin: 10px;
+  }
+  
+  .image img {
+    max-width: 100%;
+    height: auto;
+  }

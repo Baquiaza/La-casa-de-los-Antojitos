@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>La Casa De Los Antojitos</title>
+<link rel="stylesheet" type="text/css" href="css/stili.css">
+</head>
+<body1>
+
+<div class="container">
+  <div class="header">
+    <h1><img src="Logo2.png" width="10%" height="20%" alt="Cup"> LA CASA DE LOS ANTOJITOS</h1>
+    <h2>LA CASA TE COMPLACE</h2>
+    <form>
+      <input type="text" placeholder="Searching">
+      <button type="submit"><img src=" " alt="Search"></button>
+    </form>
+  </div>
+  <div class="menu">
+    <nav class="bg-zinc-800">
+      <ul class="flex justify-center space-x-4 p-2">
+          <a href="index.html" class="px-2"> INICIO </a>
+          <a href="filosofia.html" class="px-2">FILOSOFIA</a>
+          <a href="menu.html" class="px-2">MENU</a>
+          <a href="galeria.html" class="px-2">GALERIA</a>
+          <a href="ubicaion.html" class="px-2">UBICACION</a>
+          <a href="blog.html" class="px-2">BLOG</a>
+  </div>
+  <body>
+
+    <div class="container2">
+      <div class="item">
+        <div class="item-title">Tacos de carne asada</div>
+        <img src="oferta1.jpg" alt="Tacos de carne asada">
+        <div class="item-footer">
+            <button class="button" id="verMenuBtn1">Ver menú</button>
+            <button class="añadir-carrito" id="añadirCarritoBtn1">Añadir al Carrito</button>
+        </div>
+    </div>
+  
+    <div class="item">
+        <div class="item-title">Asado Familiar</div>
+        <img src="oferta2.jpg" alt="Asado Familiar">
+        <div class="item-footer">
+            <button class="button" id="verMenuBtn2">Ver menú</button>
+            <button class="añadir-carrito" id="añadirCarritoBtn2">Añadir al Carrito</button>
+        </div>
+    </div>
+  
+    <div class="item">
+        <div class="item-title">Hamburguesas</div>
+        <img src="oferta3.jpg" alt="Hamburguesas">
+        <div class="item-footer">
+            <button class="button" id="verMenuBtn3">Ver menú</button>
+            <button class="añadir-carrito" id="añadirCarritoBtn3">Añadir al Carrito</button>
+        </div>
+    </div>
+  
+  
+  <div class="item">
+    <div class="item-title">Pescado Frito</div>
+    <img src="pescado frito.jpg" alt="Pescado Frito">
+    <div class="item-footer">
+        <button class="button" id="verMenuBtn16">Ver menú</button>
+        <button class="añadir-carrito" id="añadirCarritoBtn16">Añadir al Carrito</button>
+    </div>
+  </div>
+  
+  <div class="item">
+    <div class="item-title">Pasta</div>
+    <img src="Pasta.jpg" alt="Pasta">
+    <div class="item-footer">
+        <button class="button" id="verMenuBtn17">Ver menú</button>
+        <button class="añadir-carrito" id="añadirCarritoBtn17">Añadir al Carrito</button>
+    </div>
+  </div>
+  
+  <div class="item">
+    <div class="item-title">Bandeja de Camarones</div>
+    <img src="bandeja de camarones.jpg" alt="Bandeja de Camarones">
+    <div class="item-footer">
+        <button class="button" id="verMenuBtn18">Ver menú</button>
+        <button class="añadir-carrito" id="añadirCarritoBtn18">Añadir al Carrito</button>
+    </div>
+  </div>
+  
+  <div class="item">
+    <div class="item-title">Barbacoa</div>
+    <img src="barbacoa.jpg" alt="Hamburguesa">
+    <div class="item-footer">
+        <button class="button" id="verMenuBtn19">Ver menú</button>
+        <button class="añadir-carrito" id="añadirCarritoBtn19">Añadir al Carrito</button>
+    </div>
+  </div>
+  
+  <div class="item">
+    <div class="item-title">Bandeja Paisa</div>
+    <img src="bandeja paisa.jpg" alt="Pescado">
+    <div class="item-footer">
+        <button class="button" id="verMenuBtn20">Ver menú</button>
+        <button class="añadir-carrito" id="añadirCarritoBtn20">Añadir al Carrito</button>
+    </div>
+  </div>
+  
+  <div class="item">
+    <div class="item-title">Frapé</div>
+    <img src="frapé.jpg" alt="Burrito">
+    <div class="item-footer">
+        <button class="button" id="verMenuBtn21">Ver menú</button>
+        <button class="añadir-carrito" id="añadirCarritoBtn21">Añadir al Carrito</button>
+    </div>
+  </div>
+    
+    <!-- Modal Ver Menú -->
+    <div id="verMenuModal1" class="modal">
+      <div class="modal-content">
+          <span class="close-btn" id="closeVerMenu1">&times;</span>
+          <h2>Menú - Tacos de carne asada</h2>
+          <h3>Aquí se muestra el menú de tacos de carne asada.</h3>
+          <h2>Tacos</h2>
+    <ul>
+        <li>Taco de Carne Asada Clásico: Carne asada, cebolla, cilantro, y salsa roja o verde.</li>
+        <li>Taco de Carne Asada con Queso: Carne asada, queso fundido, cebolla, cilantro, y salsa.</li>
+        <li>Taco de Carne Asada con Guacamole: Carne asada, guacamole, cebolla, cilantro, y salsa.</li>
+        <li>Taco de Carne Asada al Pastor: Carne asada, piña, cebolla, cilantro, y salsa.</li>
+        <li>Taco de Carne Asada con Frijoles: Carne asada, frijoles refritos, cebolla, cilantro, y salsa.</li>
+    </ul>
+    
+    <h2>Acompañamientos</h2>
+    <ul>
+        <li>Guacamole: Puré de aguacate con tomate, cebolla, cilantro, y limón.</li>
+        <li>Frijoles Refritos: Frijoles cocidos y aplastados con especias.</li>
+        <li>Arroz Mexicano: Arroz cocido con tomate, cebolla, y especias.</li>
+        <li>Elotes: Mazorcas de maíz asadas con mayonesa, queso, chile en polvo, y limón.</li>
+    </ul>
+    
+    <h2>Bebidas</h2>
+    <ul>
+        <li>Agua de Horchata: Bebida de arroz con canela y azúcar.</li>
+        <li>Agua de Jamaica: Bebida de flor de jamaica endulzada.</li>
+        <li>Agua de Tamarindo: Bebida de tamarindo con azúcar.</li>
+        <li>Refrescos: Coca-Cola, Sprite, Fanta, etc.</li>
+        <li>Cerveza: Corona, Modelo, Pacifico, etc.</li>
+    </ul>
+    
+    <h2>Salsas</h2>
+    <ul>
+        <li>Salsa Roja: Salsa picante a base de tomates y chiles rojos.</li>
+        <li>Salsa Verde: Salsa a base de tomatillos y chiles verdes.</li>
+        <li>Pico de Gallo: Mezcla fresca de tomate,cebolla, cilantro, y jalapeño.</li>
+        <li> Salsa de Aguacate: Salsa cremosa a base de aguacate y chile.</li>
+    </ul>
+
+    <h2>Postres</h2>
+    <ul>
+        <li>Churros: Masa frita con azúcar y canela.</li>
+        <li>Flan: Postre de caramelo y leche.</li>
+    </ul>
+      </div>
+  </div>
+  
+  <div id="verMenuModal2" class="modal">
+      <div class="modal-content">
+          <span class="close-btn" id="closeVerMenu2">&times;</span>
+          <h2>Menú - Asado Familiar</h2>
+          <h3>Aquí se muestra el menú de Asado Familiar.</h3>
+          <h2>Carnes</h2>
+          <ul>
+              <li>Costillas de Res</li>
+              <li>Chorizo</li>
+              <li>Pollo Asado</li>
+              <li>Entraña</li>
+              <li>Costillar de Cerdo</li>
+          </ul>
+      
+          <h2>Guarniciones</h2>
+          <ul>
+              <li>Ensalada de Papas</li>
+              <li>Ensalada Mixta (Lechuga, tomate, cebolla, pepino)</li>
+              <li>Choclo Asado</li>
+              <li>Pan de Ajo</li>
+              <li>Arroz con Verduras</li>
+          </ul>
+      
+          <h2>Bebidas</h2>
+          <ul>
+              <li>Vino Tinto</li>
+              <li>Cerveza</li>
+              <li>Refrescos: Coca-Cola, Sprite, Fanta, etc.</li>
+              <li>Limonada Casera</li>
+              <li>Agua Mineral</li>
+          </ul>
+      
+          <h2>Salsas y Aderezos</h2>
+          <ul>
+              <li>Chimichurri</li>
+              <li>Salsa Criolla</li>
+              <li>Mayonesa Casera</li>
+              <li>Mostaza</li>
+              <li>Salsa BBQ</li>
+          </ul>
+
+          <h2>Postres</h2>
+          <ul>
+              <li>Helado</li>
+              <li>Ensalada de Frutas</li>
+              <li>Pastel de Chocolate</li>
+              <li>Tarta de Limón</li>
+              <li>Flan Casero</li>
+          </ul>
+      </div>
+  </div>
+  
+  <div id="verMenuModal3" class="modal">
+      <div class="modal-content">
+          <span class="close-btn" id="closeVerMenu3">&times;</span>
+          <h2>Menú - Hamburguesas</h2>
+          <h3>Aquí se muestra el menú de hamburguesas.</h3>
+          <h2>Hamburguesas</h2>
+    <ul>
+        <li>Hamburguesa Clásica: Carne de res, lechuga, tomate, cebolla, pepinillos, queso cheddar, y salsa especial.</li>
+        <li>Hamburguesa con Queso: Carne de res, doble queso cheddar, lechuga, tomate, cebolla, y salsa especial.</li>
+        <li>Hamburguesa BBQ: Carne de res, queso cheddar, cebolla caramelizada, tocino, y salsa BBQ.</li>
+        <li>Hamburguesa de Pollo: Pechuga de pollo a la parrilla, lechuga, tomate, cebolla, y mayonesa.</li>
+        <li>Hamburguesa Vegetariana: Hamburguesa de garbanzos, lechuga, tomate, cebolla, pepinillos, y salsa especial.</li>
+    </ul>
+
+    <h2>Acompañamientos</h2>
+    <ul>
+        <li>Papas Fritas</li>
+        <li>Aros de Cebolla</li>
+        <li>Ensalada César</li>
+        <li>Nuggets de Pollo</li>
+        <li>Papas Rústicas</li>
+    </ul>
+
+    <h2>Bebidas</h2>
+    <ul>
+        <li>Refrescos: Coca-Cola, Sprite, Fanta, etc.</li>
+        <li>Limonada</li>
+        <li>Té Helado</li>
+        <li>Malteadas: Vainilla, Chocolate, Fresa</li>
+        <li>Cerveza</li>
+    </ul>
+
+    <h2>Salsas y Aderezos</h2>
+    <ul>
+        <li>Ketchup</li>
+        <li>Mostaza</li>
+        <li>Mayonesa</li>
+        <li>Salsa BBQ</li>
+        <li>Salsa Ranch</li>
+    </ul>
+
+    <h2>Postres</h2>
+    <ul>
+        <li>Helado</li>
+        <li>Brownie</li>
+        <li>Galletas con Chispas de Chocolate</li>
+        <li>Tarta de Manzana</li>
+        <li>Cheesecake</li>
+    </ul>
+      </div>
+  </div>
+
+  <div id="verMenuModal16" class="modal">
+    <div class="modal-content">
+        <span class="close-btn" id="closeVerMenu16">&times;</span>
+        <h2>Menú - Pescado Frito</h2>
+    <h2>Platos Principales</h2>
+    <ul>
+        <li>Pescado Frito: Filete de pescado empanizado y frito, acompañado de papas fritas.</li>
+        <li>Pescado a la Romana: Filete de pescado rebozado en masa y frito, servido con limón.</li>
+        <li>Pescado al Ajillo: Filete de pescado salteado con ajo, perejil, y aceite de oliva.</li>
+        <li>Pescado a la Veracruzana: Filete de pescado con salsa de tomate, aceitunas, alcaparras, y chiles.</li>
+        <li>Pescado al Vapor: Filete de pescado cocido al vapor con hierbas y limón.</li>
+    </ul>
+
+    <h2>Acompañamientos</h2>
+    <ul>
+        <li>Arroz Blanco</li>
+        <li>Ensalada Verde</li>
+        <li>Vegetales al Vapor</li>
+        <li>Puré de Papas</li>
+        <li>Plátanos Maduros</li>
+    </ul>
+
+    <h2>Bebidas</h2>
+    <ul>
+        <li>Agua Natural</li>
+        <li>Refrescos: Coca-Cola, Sprite, Fanta, etc.</li>
+        <li>Jugos Naturales: Naranja, Piña, Mango, etc.</li>
+        <li>Cerveza</li>
+        <li>Vino Blanco</li>
+    </ul>
+
+    <h2>Salsas y Aderezos</h2>
+    <ul>
+        <li>Salsa Tartara</li>
+        <li>Salsa de Ajo</li>
+        <li>Salsa de Chipotle</li>
+        <li>Pico de Gallo</li>
+        <li>Salsa de Soya</li>
+    </ul>
+
+    <h2>Postres</h2>
+    <ul>
+        <li>Tres Leches</li>
+        <li>Flan de Caramelo</li>
+        <li>Gelatina de Frutas</li>
+        <li>Helado de Vainilla</li>
+        <li>Pastel de Chocolate</li>
+    </ul>
+    </div>
+</div>
+
+<div id="verMenuModal17" class="modal">
+  <div class="modal-content">
+      <span class="close-btn" id="closeVerMenu17">&times;</span>
+      <h2>Menú - Pasta</h2>
+      <h2>Platos Principales</h2>
+      <ul>
+          <li>Spaghetti Carbonara: Spaghetti con salsa de huevo, queso parmesano, panceta y pimienta negra.</li>
+          <li>Lasaña Bolognesa: Capas de pasta intercaladas con salsa de carne boloñesa, queso y bechamel.</li>
+          <li>Raviolis de Espinaca y Ricotta: Raviolis rellenos de espinaca, ricotta y nuez moscada, servidos con salsa de tomate.</li>
+          <li>Penne Arrabbiata: Penne con salsa de tomate, ajo, guindilla, aceite de oliva y albahaca fresca.</li>
+          <li>Fettuccine Alfredo: Fettuccine con salsa de crema, mantequilla y queso parmesano.</li>
+      </ul>
+  
+      <h2>Acompañamientos</h2>
+      <ul>
+          <li>Ensalada César</li>
+          <li>Pan de Ajo</li>
+          <li>Bruschettas de Tomate</li>
+          <li>Verduras a la Parrilla</li>
+          <li>Antipasto Italiano</li>
+      </ul>
+  
+      <h2>Bebidas</h2>
+      <ul>
+          <li>Vino Tinto</li>
+          <li>Vino Blanco</li>
+          <li>Cerveza Artesanal</li>
+          <li>Agua Mineral</li>
+          <li>Jugos Naturales: Limonada, Naranjada, etc.</li>
+      </ul>
+  
+      <h2>Salsas y Aderezos</h2>
+      <ul>
+          <li>Salsa Pesto</li>
+          <li>Salsa Marinara</li>
+          <li>Salsa Boloñesa</li>
+          <li>Salsa Alfredo</li>
+          <li>Aceite de Oliva Extra Virgen</li>
+      </ul>
+  
+      <h2>Postres</h2>
+      <ul>
+          <li>Tiramisú</li>
+          <li>Panna Cotta</li>
+          <li>Cannoli Siciliani</li>
+          <li>Gelato Italiano</li>
+          <li>Tarta de Frutas Frescas</li>
+      </ul>
+  </div>
+</div>
+
+<div id="verMenuModal18" class="modal">
+  <div class="modal-content">
+      <span class="close-btn" id="closeVerMenu18">&times;</span>
+      <h2>Menú - Bandeja de Camarones</h2>
+      <h2>Platos Principales</h2>
+      <ul>
+          <li>Camarones al Ajillo: Camarones salteados con ajo, perejil y aceite de oliva.</li>
+          <li>Camarones Empanizados: Camarones empanizados y fritos, servidos con salsa tártara.</li>
+          <li>Camarones al Vapor: Camarones cocidos al vapor, servidos con mantequilla de hierbas.</li>
+          <li>Camarones al Chipotle: Camarones en salsa de chipotle con crema y cilantro.</li>
+          <li>Camarones a la Parrilla: Camarones marinados a la parrilla con limón y especias.</li>
+      </ul>
+  
+      <h2>Acompañamientos</h2>
+      <ul>
+          <li>Arroz Blanco</li>
+          <li>Ensalada de Aguacate y Mango</li>
+          <li>Papas al Horno</li>
+          <li>Vegetales Salteados</li>
+          <li>Pan de Ajo</li>
+      </ul>
+  
+      <h2>Bebidas</h2>
+      <ul>
+          <li>Agua Natural</li>
+          <li>Refrescos: Coca-Cola, Sprite, Fanta, etc.</li>
+          <li>Cerveza</li>
+          <li>Vino Blanco</li>
+          <li>Cócteles: Mojito, Piña Colada, Margarita, etc.</li>
+      </ul>
+  
+      <h2>Salsas y Aderezos</h2>
+      <ul>
+          <li>Salsa de Mango</li>
+          <li>Salsa Tártara</li>
+          <li>Salsa de Cilantro</li>
+          <li>Mayonesa de Ajo</li>
+          <li>Salsa Picante</li>
+      </ul>
+  
+      <h2>Postres</h2>
+      <ul>
+          <li>Flan de Coco</li>
+          <li>Helado de Vainilla</li>
+          <li>Frutas Tropicales</li>
+          <li>Tarta de Limón</li>
+          <li>Pastel de Chocolate</li>
+      </ul>
+  </div>
+</div>
+
+<div id="verMenuModal19" class="modal">
+  <div class="modal-content">
+      <span class="close-btn" id="closeVerMenu19">&times;</span>
+      <h2>Menú - Barbacoa</h2>
+      <h2>Platos Principales</h2>
+      <ul>
+          <li>Costillas BBQ: Costillas de cerdo marinadas en salsa barbacoa y asadas a la parrilla.</li>
+          <li>Churrasco: Corte de carne de res asado a la parrilla con especias y salsa chimichurri.</li>
+          <li>Pollo a la Parrilla: Muslos y pechugas de pollo marinados con hierbas y limón.</li>
+          <li>Costillas de Cordero: Costillas de cordero marinadas con ajo, romero y limón.</li>
+          <li>Hamburguesas de Res: Hamburguesas de res sazonadas con sal y pimienta, acompañadas de queso cheddar.</li>
+      </ul>
+  
+      <h2>Acompañamientos</h2>
+      <ul>
+          <li>Papas Asadas con Romesco</li>
+          <li>Ensalada de Col</li>
+          <li>Maíz a la Parrilla</li>
+          <li>Frijoles Refritos</li>
+          <li>Arroz con Vegetales</li>
+      </ul>
+  
+      <h2>Bebidas</h2>
+      <ul>
+          <li>Cerveza Artesanal</li>
+          <li>Vino Tinto</li>
+          <li>Refrescos: Coca-Cola, Sprite, Fanta, etc.</li>
+          <li>Agua Mineral</li>
+          <li>Cocteles: Mojito, Piña Colada, Margarita, etc.</li>
+      </ul>
+  
+      <h2>Salsas y Aderezos</h2>
+      <ul>
+          <li>Salsa Barbacoa Casera</li>
+          <li>Salsa Chimichurri</li>
+          <li>Salsa de Queso</li>
+          <li>Salsa de Mango y Cilantro</li>
+          <li>Mayonesa con Ajo</li>
+      </ul>
+  
+      <h2>Postres</h2>
+      <ul>
+          <li>Brownies de Chocolate</li>
+          <li>Helado de Vainilla con Salsa de Caramelo</li>
+          <li>Tarta de Limón</li>
+          <li>Frutas a la Parrilla con Miel</li>
+          <li>Cheesecake de Frutos Rojos</li>
+      </ul>
+  </div>
+</div>
+
+<div id="verMenuModal20" class="modal">
+  <div class="modal-content">
+      <span class="close-btn" id="closeVerMenu20">&times;</span>
+      <h2>Menú - Bandeja Paisa</h2>
+      <h2>Platos Principales</h2>
+      <ul>
+          <li>Carne Asada: Jugoso filete de carne asada a la parrilla.</li>
+          <li>Chicharrón: Trozos crujientes de chicharrón de cerdo.</li>
+          <li>Arroz: Arroz blanco cocido.</li>
+          <li>Frijoles: Frijoles rojos cocidos con hogao (cebolla, tomate y cilantro).</li>
+          <li>Huevo Frito: Huevo frito con la yema líquida.</li>
+          <li>Plátano Maduro: Plátano maduro frito.</li>
+          <li>Arepa: Arepa blanca asada.</li>
+          <li>Chorizo: Chorizo criollo asado.</li>
+      </ul>
+  
+      <h2>Acompañamientos</h2>
+      <ul>
+          <li>Ensalada de Aguacate y Tomate</li>
+          <li>Limón</li>
+          <li>Guacamole</li>
+          <li>Salsa de Aji</li>
+          <li>Arroz con Leche</li>
+      </ul>
+  
+      <h2>Bebidas</h2>
+      <ul>
+          <li>Agua de Panela</li>
+          <li>Refajo (Colombiana con cerveza)</li>
+          <li>Aguapanela con Queso</li>
+          <li>Jugo de Lulo</li>
+          <li>Aguardiente Antioqueño</li>
+      </ul>
+  
+      <h2>Postres</h2>
+      <ul>
+          <li>Natilla</li>
+          <li>Arequipe</li>
+          <li>Flan de Coco</li>
+          <li>Mazamorra con Leche</li>
+          <li>Torta de Tres Leches</li>
+      </ul>
+  </div>
+</div>
+
+<div id="verMenuModal21" class="modal">
+  <div class="modal-content">
+      <span class="close-btn" id="closeVerMenu21">&times;</span>
+      <h2>Menú - Frape</h2>
+      <h2>Frapés Clásicos</h2>
+    <ul>
+        <li>Frapé de Café: Café frío mezclado con hielo y leche, servido con crema batida.</li>
+        <li>Frapé de Mocha: Mezcla de café, chocolate y hielo, adornado con chocolate rallado.</li>
+        <li>Frapé de Vainilla: Café con esencia de vainilla, hielo y leche, decorado con canela.</li>
+        <li>Frapé de Caramelo: Café con jarabe de caramelo, hielo y leche, cubierto con caramelo líquido.</li>
+        <li>Frapé de Chocolate: Café con jarabe de chocolate, hielo y leche, coronado con crema batida y chips de chocolate.</li>
+    </ul>
+
+    <h2>Frapés Especiales</h2>
+    <ul>
+        <li>Frapé de Frutas Tropicales: Mezcla de frutas tropicales, hielo y jugo natural, decorado con frutas frescas.</li>
+        <li>Frapé de Matcha: Té verde matcha con hielo, leche y jarabe de azúcar, servido con polvo de matcha encima.</li>
+        <li>Frapé de Piña Colada: Mezcla de piña, coco, hielo y crema de coco, adornado con rodaja de piña y coco rallado.</li>
+        <li>Frapé de Fresa y Kiwi: Mezcla de fresas, kiwi, hielo y jugo natural, decorado con rodajas de fresa y kiwi.</li>
+        <li>Frapé de Tiramisú: Café con jarabe de tiramisú, hielo y leche, cubierto con cacao en polvo y crema batida.</li>
+    </ul>
+
+    <h2>Opciones sin Cafeína</h2>
+    <ul>
+        <li>Frapé de Chocolate Blanco: Mezcla de chocolate blanco, hielo y leche, decorado con crema batida y virutas de chocolate blanco.</li>
+        <li>Frapé de Vainilla Fría: Leche fría con esencia de vainilla y hielo, cubierto con crema batida y canela.</li>
+        <li>Frapé de Frutas del Bosque: Mezcla de frutos del bosque, hielo y jugo natural, decorado con frambuesas y arándanos.</li>
+        <li>Frapé de Mango y Coco: Mezcla de mango, crema de coco, hielo y leche de coco, adornado con rodajas de mango y coco rallado.</li>
+        <li>Frapé de Yogur y Miel: Yogur natural con miel, hielo y leche, decorado con granola y rodaja de fruta fresca.</li>
+    </ul>
+
+    <h2>Acompañamientos</h2>
+    <ul>
+        <li>Muffins</li>
+        <li>Cupcakes</li>
+        <li>Galletas</li>
+        <li>Crepas</li>
+        <li>Pastelitos</li>
+    </ul>
+
+    <h2>Postres</h2>
+    <ul>
+        <li>Helado</li>
+        <li>Tarta de Queso</li>
+        <li>Brownie de Chocolate</li>
+        <li>Frutas Frescas</li>
+        <li>Gelatina</li>
+    </ul>
+  </div>
+</div>
+
+  <!-- Modal Añadir al Carrito -->
+  <div id="añadirCarritoModal1" class="modal">
+    <div class="modal-content">
+        <span class="close-btn" id="closeAñadirCarrito1">&times;</span>
+        <h2>Añadir al Carrito - Tacos de carne asada</h2>
+        <p>El producto ha sido añadido al carrito.</p>
+    </div>
+</div>
+
+<div id="añadirCarritoModal2" class="modal">
+    <div class="modal-content">
+        <span class="close-btn" id="closeAñadirCarrito2">&times;</span>
+        <h2>Añadir al Carrito - Asado Familiar</h2>
+        <p>El producto ha sido añadido al carrito.</p>
+    </div>
+</div>
+
+<div id="añadirCarritoModal3" class="modal">
+    <div class="modal-content">
+        <span class="close-btn" id="closeAñadirCarrito3">&times;</span>
+        <h2>Añadir al Carrito - Hamburguesas</h2>
+        <p>El producto ha sido añadido al carrito.</p>
+    </div>
+</div>
+
+<div id="añadirCarritoModal16" class="modal">
+  <div class="modal-content">
+      <span class="close-btn" id="closeAñadirCarrito16">&times;</span>
+      <h2>Añadir al Carrito - Pescado Frito</h2>
+      <p>El producto ha sido añadido al carrito.</p>
+  </div>
+</div>
+
+<div id="añadirCarritoModal17" class="modal">
+<div class="modal-content">
+    <span class="close-btn" id="closeAñadirCarrito17">&times;</span>
+    <h2>Añadir al Carrito - Pasta</h2>
+    <p>El producto ha sido añadido al carrito.</p>
+</div>
+</div>
+
+<div id="añadirCarritoModal18" class="modal">
+<div class="modal-content">
+    <span class="close-btn" id="closeAñadirCarrito18">&times;</span>
+    <h2>Añadir al Carrito - Bandeja de Camarones</h2>
+    <p>El producto ha sido añadido al carrito.</p>
+</div>
+</div>
+
+<div id="añadirCarritoModal19" class="modal">
+<div class="modal-content">
+    <span class="close-btn" id="closeAñadirCarrito19">&times;</span>
+    <h2>Añadir al Carrito - Barbacoa</h2>
+    <p>El producto ha sido añadido al carrito.</p>
+</div>
+</div>
+
+<div id="añadirCarritoModal20" class="modal">
+<div class="modal-content">
+    <span class="close-btn" id="closeAñadirCarrito20">&times;</span>
+    <h2>Añadir al Carrito - Bandeja Paisa</h2>
+    <p>El producto ha sido añadido al carrito.</p>
+</div>
+</div>
+
+<div id="añadirCarritoModal21" class="modal">
+<div class="modal-content">
+    <span class="close-btn" id="closeAñadirCarrito21">&times;</span>
+    <h2>Añadir al Carrito - Frapé</h2>
+    <p>El producto ha sido añadido al carrito.</p>
+</div>
+</div>
+<script src="js/script.js"></script>
+    </body>
+</html>
